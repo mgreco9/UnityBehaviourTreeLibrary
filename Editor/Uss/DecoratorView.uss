@@ -1,0 +1,65 @@
+:hover > #selection-border {
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
+
+.selected #selection-border {
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
+
+:hover > .selected #selection-border {
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+}
+
+#title {
+    -unity-font-style: bold;
+    font-size: 14px;
+}
+
+#description {
+    font-size: 10px;
+}
+
+#color-panel {
+    min-height: 20px;
+    background-color: rgb(253, 221, 13);
+}
+
+.update #color-panel {
+    background-color: rgb(245, 169, 9);
+}
+
+.output #color-panel {
+    background-color: rgb(236, 117, 5);
+}
+
+.start-condition #color-panel {
+    background-color: rgb(253, 221, 13);
+}
+
+.stop-condition #color-panel {
+    background-color: rgb(144, 78, 85);
+}
+
+#decorator-border {
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+}
+
+.decorator {
+    margin-top: 5px;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}

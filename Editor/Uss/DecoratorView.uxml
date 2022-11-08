@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/BehaviourTreeLibrary/Editor/DecoratorView.uss?fileID=7433441132597879392&amp;guid=322d9a9f02ae2aa408467fdecbff01a9&amp;type=3#DecoratorView" />
+    <ui:VisualElement name="selection-border" />
+    <ui:VisualElement name="decorator-border" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; border-top-left-radius: 4px; border-bottom-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-left-color: rgb(106, 106, 106); border-right-color: rgb(106, 106, 106); border-top-color: rgb(106, 106, 106); border-bottom-color: rgb(106, 106, 106);">
+        <ui:VisualElement name="contents">
+            <ui:VisualElement name="color-panel" />
+            <ui:VisualElement name="divider" />
+            <ui:Label text="Decorator" display-tooltip-when-elided="true" name="title" />
+            <ui:Label text="Decorator description" display-tooltip-when-elided="true" name="description" />
+        </ui:VisualElement>
+        <ui:VisualElement name="variable-container" />
+    </ui:VisualElement>
+</ui:UXML>

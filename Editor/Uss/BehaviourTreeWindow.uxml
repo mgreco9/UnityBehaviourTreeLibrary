@@ -1,0 +1,20 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/BehaviourTreeLibrary/Editor/Uss/BehaviourTreeWindow.uss?fileID=7433441132597879392&amp;guid=530f727d1191c3e41a834e2f4fcb3577&amp;type=3#BehaviourTreeWindow" />
+    <uie:Toolbar style="justify-content: space-between;">
+        <ui:VisualElement name="left-menu" />
+        <ui:VisualElement name="right-menu" style="align-items: flex-end; flex-direction: row;">
+            <uie:ToolbarButton text="Organize" display-tooltip-when-elided="true" name="reorganize-button" />
+            <uie:ToolbarButton display-tooltip-when-elided="true" text="Center" name="recenter-button" />
+        </ui:VisualElement>
+    </uie:Toolbar>
+    <BehaviourTreeLibrary.SplitView>
+        <ui:VisualElement name="left-panel">
+            <ui:VisualElement name="inspector-container" style="min-height: 200px; height: 100%;">
+                <BehaviourTreeLibrary.InspectorView />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="right-panel">
+            <BehaviourTreeLibrary.BehaviourTreeView style="width: 100%; height: 100%;" />
+        </ui:VisualElement>
+    </BehaviourTreeLibrary.SplitView>
+</ui:UXML>
