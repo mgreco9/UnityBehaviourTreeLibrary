@@ -18,7 +18,10 @@ namespace BehaviourTreeLibrary
         private List<BlackboardEntry> blackboardEntries = new List<BlackboardEntry>();
 
         public Vector3 viewTransform = Vector3.zero;
-        public Vector3 viewScale = Vector3.one;
+        public Vector3 viewScale = Vector3.one; 
+
+
+        public Vector3 viewOffset = Vector3.zero;
 
         public void OnBeforeSerialize()
         {
@@ -28,6 +31,7 @@ namespace BehaviourTreeLibrary
                 blackboardEntries.Add(entry);
             }
         }
+
          
         public void OnAfterDeserialize() 
         {
@@ -154,8 +158,9 @@ namespace BehaviourTreeLibrary
 
             AssetDatabase.SaveAssets();
 
-            // 5 - Return the entry
+            // 5 - Return the entry 
             return blackboardEntry;
+
         }
 
         public BlackboardEntry RenameBlackboardEntry(string oldKey, string newKey)
